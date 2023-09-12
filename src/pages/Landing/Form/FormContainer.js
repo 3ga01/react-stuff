@@ -6,16 +6,17 @@ import Input from "./Input";
 import "../../../css/label.css";
 
 function FormContainer() {
-  const validEmail = /^\d{1,10}$/;
-  const [email, setEmail] = useState("");
+  const validPhone = /^\d{1,10}$/;
+  const [phone, setPhone] = useState("");
 
   const handleChange = ({ target }) => {
-    const newEmail = target.value;
+    const newPhone = target.value;
 
-    const isValid = validEmail.test(newEmail);
+    const isValid = validPhone.test(newPhone);
 
-    if (isValid || newEmail === "") {
-      setEmail(newEmail);
+    if (isValid || newPhone === "") {
+      setPhone(newPhone);
+      console.log(isValid);
     }
   };
 
@@ -24,12 +25,12 @@ function FormContainer() {
       <form>
         <h2>SIGNUP</h2>
         <div className="box">
-          <Label text="Email" />
+          <Label text="Phone" />
           <Input
             onChange={handleChange}
             type="email"
-            placeholder="example@email.com"
-            value={email}
+            placeholder="0241339963"
+            value={phone}
           />
         </div>
         <div className="box">
@@ -40,7 +41,7 @@ function FormContainer() {
       </form>
     </div>
   );
-  console.log(email);
+  console.log(phone);
 }
 
 export default FormContainer;

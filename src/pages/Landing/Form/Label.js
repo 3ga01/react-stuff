@@ -4,7 +4,7 @@ import "../../../css/label.css";
 function Label(props) {
   return (
     <div>
-      <label id={props.id}>{props.text}</label>
+      <label for={props.id} >{props.text}</label>
     </div>
   );
 }
