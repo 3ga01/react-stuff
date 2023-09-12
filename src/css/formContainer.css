@@ -17,3 +17,12 @@ Button{
     padding: 5px;
    
 }
+
+.box{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    justify-content: space-around;
+
+}
