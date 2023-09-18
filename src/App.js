@@ -1,11 +1,10 @@
 import "./App.css";
-import Landing from "./pages/Landing/Landing";
-import "./css/formContainer.css";
+import SignUp from "./pages/SignUp/SignUp";
 
 function App() {
   return (
     <div>
-      
+      <SignUp />
     </div>
   );
 }
